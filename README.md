@@ -6,6 +6,10 @@
 <img width="1892" alt="Screenshot 2024-06-12 at 01 03 53" src="https://github.com/mixalissan/ShiftSync/assets/93053477/15f54a34-2f7c-4e5c-b67e-1509b5a9d56f">
 <img width="1891" alt="Screenshot 2024-06-12 at 01 08 18" src="https://github.com/mixalissan/ShiftSync/assets/93053477/25ffa212-5e43-49c0-af06-d4ecea2451ee">
 
+<h2>Description</h2>
+ShiftSync is a fictional company which specializes in making products that helps the workforce of a company manage their shifts. The website is meant to be the service used by managers to control the shifts of their employees.
+The managers have the option to create new shifts on a date and time of their choosing and assign them to a certain employee, they can view when employees are available and assign a shift at a specific time with a press of a button,
+and they have a calendar which allows them to look over the entire schedule of the company. Lastly they receive alerts from employees and can see details employees post after a shift of theirs is done<br>
 
 HOW TO RUN:
 
