@@ -9,13 +9,13 @@
 
 HOW TO RUN:
 
-The following are needed for website to function:
-Node js 
-express
-body-parser
-express-session
-mysql2
-
+The following are needed for website to function:<br>
+Node js<br>
+express<br>
+body-parser<br>
+express-session<br>
+mysql2<br>
+<br>
 and then run: "node server.js" at the location of the shiftsync folder.
 
 
