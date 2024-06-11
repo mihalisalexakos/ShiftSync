@@ -19,7 +19,7 @@ mysql2<br>
 and then run: "node server.js" at the location of the shiftsync folder.
 
 
-HTML 
+<h1>HTML</h1>
 
 <h3>Sign-in.html</h3>
 Includes form that lets user type in their username and passoword information. Form data is sent to
