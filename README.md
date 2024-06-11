@@ -2,9 +2,9 @@
 
 <img width="1889" alt="Screenshot 2024-06-12 at 01 08 37" src="https://github.com/mixalissan/ShiftSync/assets/93053477/022b13a2-7498-4a92-8251-f51b08e19ac2">
 <img width="1891" alt="Screenshot 2024-06-12 at 01 04 06" src="https://github.com/mixalissan/ShiftSync/assets/93053477/02666a3c-bc75-4595-996f-599c611847ad">
-<img width="1891" alt="Screenshot 2024-06-12 at 01 08 18" src="https://github.com/mixalissan/ShiftSync/assets/93053477/25ffa212-5e43-49c0-af06-d4ecea2451ee">
 <img width="1890" alt="Screenshot 2024-06-12 at 01 08 10" src="https://github.com/mixalissan/ShiftSync/assets/93053477/a1b83314-2a6b-4004-bd5c-9563ed14117b">
 <img width="1892" alt="Screenshot 2024-06-12 at 01 03 53" src="https://github.com/mixalissan/ShiftSync/assets/93053477/15f54a34-2f7c-4e5c-b67e-1509b5a9d56f">
+<img width="1891" alt="Screenshot 2024-06-12 at 01 08 18" src="https://github.com/mixalissan/ShiftSync/assets/93053477/25ffa212-5e43-49c0-af06-d4ecea2451ee">
 
 
 HOW TO RUN:
