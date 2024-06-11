@@ -1,0 +1,79 @@
+:root {
+    --primary-clr: #b38add;
+    --orangeold: #fda10d;
+    --orange: #bf4e00;
+    --orangehighlight: #e68139;
+    --blue: #14213d;
+    --black: rgb(11, 11, 12);
+    --offblack: rgb(24, 24, 26);
+    --white: rgb(252, 252, 254);
+    --offwhite:rgb(203, 201, 209);
+    --darkgrey: grey;
+    --hover_date: rgb(218, 216, 224);
+    --grey: #878895;
+    --light-grey: #b0b1c0;
+    --bodybg: rgb(229, 227, 233);
+    --onlinegreen: rgb(58, 168, 58);
+
+    --darkdarkgrey: rgb(90, 90, 90);
+}
+
+
+.alert-container {
+    position: relative;
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 90vh;
+    min-height: 600px;
+    max-width: 1500px;
+    max-height: 1000px;
+
+}
+
+
+.alert {
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-shrink: 0;
+}
+
+.pinned-alert {
+    border: 5px solid var(--orangehighlight);
+}
+
+.pinned-icon {
+    color: var(--orangehighlight)
+}
+
+.alert-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.alert i {
+    transition: 0.3s;
+}
+
+.alert i:hover {
+    color: var(--orangehighlight);
+    transform: scale(1.1);
+}
+
+.alert-time {
+    color: var(--grey);
+    padding-right: 20px;
+}

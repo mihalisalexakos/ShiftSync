@@ -1,0 +1,64 @@
+:root {
+    --primary-clr: #b38add;
+    --orangeold: #fda10d;
+    --orange: #bf4e00;
+    --orangehighlight: #e68139;
+    --blue: #14213d;
+    --black: rgb(11, 11, 12);
+    --offblack: rgb(24, 24, 26);
+    --white: rgb(252, 252, 254);
+    --offwhite:rgb(203, 201, 209);
+    --darkgrey: grey;
+    --hover_date: rgb(218, 216, 224);
+    --grey: #878895;
+    --light-grey: #b0b1c0;
+    --bodybg: rgb(229, 227, 233);
+    --onlinegreen: rgb(58, 168, 58);
+
+    --darkdarkgrey: rgb(90, 90, 90);
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.back-button{
+    font-size: 3rem;
+    color: var(--darkdarkgrey);
+    transition: 0.2s;
+    margin: 50px;
+}
+
+.back-button:hover{
+    color: var(--orange);
+    transform: scale(1.1);
+}
+
+.back-button:active{
+    color: var(--orange);
+    transform: scale(0.9);
+}
+
+
+.support-container{
+    width: 50vw;
+    min-width: 500px;
+    text-align: center;
+    margin: 30px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.support-container p{
+    color: var(--darkdarkgrey);
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.support-container h3, h1{
+    color: var(--darkdarkgrey);
+    margin: 10px;
+}

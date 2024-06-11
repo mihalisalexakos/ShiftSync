@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Overview</title>
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+</head>
+
+<body>
+    <audio style="visibility: hidden;" id="toggleSound" src="gnome.mp3"></audio>
+
+    <div class="universal-page-container">
+        <div class="sidebar">
+            <ul>
+                <li><img src="Logo.png"></li>
+                <li><a class="selected" href="#"><i class="fa-solid fa-user"></i> &nbsp; Overview</a></li>
+                <li><a href="calendar.html"><i class="fa-solid fa-calendar"></i> &nbsp; Schedule</a></li>
+                <li><a href="alerts.html"><i class="fa-solid fa-bell"></i> &nbsp; Alerts</a></li>
+                <li><a class="bottom-settings" href="support.html">Support</a></li>
+                <li><a class="bottom-settings" href="sign-in.html">Log out</a></li>
+            </ul>
+        </div>
+        <div class="index-container">
+            <div class="wrapper">
+                <div class="profile-wrapper">
+                    <img src="photo.jpg">
+                    <div class="profile-info">
+                        <h3 id="overview-username"> </h3>
+                        <p id="overview-empid"> </p>
+                        <button>
+                            <i class="fa-solid fa-earth-americas"></i>
+                            Online
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="overview-wrapper">
+                    <div class="upcoming-shifts-wrapper">
+                        <h3>Upcoming Shifts</h3>
+                        
+                        <div class="shift-inner-wrapper"> </div>
+
+                        <a href="calendar.html"><button>View more</button></a>
+                    </div>
+
+                    <div class="index-alert-wrapper">
+                        <h3>Recent Alerts</h3>
+
+                        <div class="alert-inner-wrapper"> </div>
+
+                        <a href="alerts.html"><button>View more</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script  type="module" src="client.js"></script>
+
+  </div></body></html>
+
+
+  <!-- <div class="index-alert">
+    <p>violent costumer is disturbing the store</p>
+    <p style="color:grey">Dimitris Panos</p>
+  </div>
+
+  <div class="index-alert">
+    <p>costumer was removed by security</p>
+    <p style="color:grey">Dimitris Panos</p>
+  </div>
+
+  <div class="index-alert">
+    <p>i had to end my shift early today for family reasons</p>
+    <p style="color:grey">Jim Jam</p>
+  </div>
+
+  <div class="index-alert">
+    <p>i got locked inside the store help</p>
+    <p style="color:grey">Josh Mathews</p>
+  </div> -->

@@ -1,0 +1,652 @@
+
+:root {
+    --primary-clr: #b38add;
+    --orangeold: #fda10d;
+    --orange: #bf4e00;
+    --orangehighlight: #e68139;
+    --blue: #14213d;
+    --black: rgb(11, 11, 12);
+    --offblack: rgb(24, 24, 26);
+    --white: rgb(252, 252, 254);
+    --offwhite:rgb(203, 201, 209);
+    --darkgrey: grey;
+    --hover_date: rgb(218, 216, 224);
+    --grey: #878895;
+    --light-grey: #b0b1c0;
+    --bodybg: rgb(229, 227, 233);
+    --onlinegreen: rgb(58, 168, 58);
+
+    --darkdarkgrey: rgb(90, 90, 90);
+}
+
+/* left side of container
+
+/* shift detailed view */
+.shift-view{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 700px;
+    max-height: 1000px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--blue);
+    border-radius: 15px;
+    background-color: var(--white);
+    filter: drop-shadow(0 0 5px var(--light-grey));
+}
+
+.shift-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 35px;
+    padding: 40px;
+    align-items: center;
+}
+
+.shift-view-button{
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.shift-view-button:hover{
+    color: var(--orange);
+    transform: scale(1.1);
+}
+
+.shift-view-info{
+    margin: 5px;
+    max-height: 600px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 0px;
+    gap: 15px;
+    font-size: 1rem;
+    color: var(--light-grey);
+}
+
+.shift-view-info img{
+    width: 200px;
+}
+
+.shift-view-answer{
+    color: black;
+}
+
+/*calendar */
+
+.calendar {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 800px;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    color: var(--blue);
+    border-radius: 15px;
+    background-color: var(--white);
+}
+
+
+.calendar .month {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.calendar .month .prev,
+.calendar .month .next {
+    cursor: pointer;
+}
+
+/* left and right arrows that change months */
+.calendar .month .prev:hover,
+.calendar .month .next:hover {
+    color: var(--orange);
+}
+
+/* weekday text on top of calendar */
+.calendar .weekdays {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weekdays div {
+    width: 14.28%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* flex grid of all days of the month */
+.calendar .days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* individual settings for each day */
+.calendar .days .day {
+    border-radius: 20px;
+    width: 14.28%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--blue);
+
+
+}
+
+
+.calendar .days .day:not(.prev-date, .next-date, .active):hover {
+    color: var(--black);
+    background-color: var(--hover_date);
+
+}
+
+.calendar .days .prev-date,
+.calendar .days .next-date {
+    color: var(--darkgrey);
+}
+
+/* selected day on calendar */
+.calendar .days .active {
+    position: relative;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--orange);
+}
+
+.calendar .days .active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.calendar .days .event {
+    position: relative;
+}
+
+.calendar .days .event::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 75%;
+    height: 6px;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    background-color: var(--orange);
+}
+
+.calendar .days .day:hover.event::after {
+    background-color: var(--white);
+}
+
+.calendar .days .active.event::after {
+    background-color: var(--white);
+    bottom: 20%;
+}
+
+.calendar .days .active.event {
+    padding-bottom: 10px;
+}
+
+.calendar .goto-today {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: var(--orange);
+}
+
+.calendar .goto-today .goto {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--orange);
+
+}
+
+.calendar .goto-today .goto input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: var(--orange);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.calendar .goto-today button {
+    padding: 10px 10px;
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--orange);
+
+}
+
+.calendar .goto-today button:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.calendar .goto-today .goto button {
+    border: none;
+    border-left: 1px solid var(--orange);
+    border-radius: 0;
+    height: 100%;
+}
+
+
+/* right side of container
+has 3 buttons leading to 3 different tabs
+
+3 selection buttons on top */
+
+.button-wrapper{
+
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button-right{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--white);
+    filter: drop-shadow(0 0 5px var(--light-grey));
+    color: var(--darkgrey);
+    width: 50%;
+    border: none;
+    transition: 0.3s;
+}
+.event-button{
+    width: 40%;
+}
+
+.button-right:hover{
+    transform: scale(1.05);
+}
+
+.button-right:active{
+    transform: scale(0.9);
+}
+
+.button-right-plus{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--white);
+    filter: drop-shadow(0 0 5px var(--light-grey));
+    color: var(--darkgrey);
+    width: 10%;
+    border: none;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+/* activity tab */
+
+.activity-tab{
+
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-height: 700px;
+    flex-grow: 1; 
+    border-radius: 20px;
+}
+
+
+.activity-wrapper {
+    background-color: var(--white);
+    width: 95%;
+    height: fit-content;
+    min-height: 100px;
+    flex-shrink: 0;
+    padding: 20px;
+    display: flex;
+    border-radius: 15px;
+    gap: 5px;
+    justify-content: space-between; 
+    align-items: center; 
+    filter: drop-shadow(0 0 5px var(--light-grey));
+}
+
+
+.activity-title{
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.activity-body{
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.activity-time{
+    color: var(--grey);
+    font-size: 1rem;
+}
+
+
+.activity-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.activity-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.activity-icon {
+    color: var(--darkgrey);
+    font-size: 1.5em; 
+    transition: 0.2s;
+}
+
+.activity-icon:hover {
+    color: var(--orange);
+    transform: scale(1.05);
+}
+
+.activity-icon:active {
+    color: var(--orangehighlight);
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+/* event tab */
+
+.event-tab {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.event-tab .today-date {
+
+    width: 100%;
+    height: 50px;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.event-tab .today-date .event-day {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.event-tab .today-date .event-date {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+
+
+.events {
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: fit-content;
+    max-height: 600px;
+    flex-grow: 1; 
+    border-radius: 20px;
+}
+
+.events .event {
+    background-color: var(--white);
+    border-radius: 15px;
+    position: relative;
+    width: 95%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    color: var(--black);
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--light-grey));
+    flex-shrink: 0;
+}
+
+.event-view-details-button{
+    width: fit-content;
+    color: var(--grey);
+    font-size: 1.2rem;
+    transition: 0.3s;
+    padding: 10px;
+    background-color: none;
+    
+}
+
+.event-view-details-button:hover{
+    color: var(--orange);
+    transform: scale(1.1);
+}
+
+
+.events .event .title {
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.events .event .title .event-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.events .event .event-time {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--grey);
+    pointer-events: none;
+}
+
+.events .no-event {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.events .event .event-details{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.event-info-wrapper{
+    display: flex;
+    flex-direction:column;
+}
+
+
+
+/* add event tab */
+
+
+.add-event-wrapper {
+
+    display: none;
+    filter: drop-shadow(0 0 5px var(--light-grey));
+    padding-bottom: 30px;
+    padding-top: 20px;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--white);
+}
+
+
+.add-event-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: var(--black);
+}
+
+.add-event-header .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.add-event-body {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.add-event-body .add-event-input {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.add-event-body .add-event-input input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border:none;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+
+.add-event-body .add-event-input input::placeholder {
+    color: var(--grey);
+}
+
+.add-event-body .add-event-input input:focus {
+    border: 1px solid var(--orange);
+
+}
+
+.add-event-body .add-event-input input:focus::placeholder {
+    color: var(--orange);
+}
+
+.add-event-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-event-footer .add-event-btn {
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    color: var(--orange);
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid var(--orange);
+}
+
+.add-event-footer .add-event-btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+} 

@@ -1,0 +1,226 @@
+:root {
+    --primary-clr: #b38add;
+    --orangeold: #fda10d;
+    --orange: #bf4e00;
+    --orangehighlight: #e68139;
+    --blue: #14213d;
+    --black: rgb(11, 11, 12);
+    --offblack: rgb(24, 24, 26);
+    --white: rgb(252, 252, 254);
+    --offwhite:rgb(203, 201, 209);
+    --darkgrey: grey;
+    --hover_date: rgb(218, 216, 224);
+    --grey: #878895;
+    --light-grey: #b0b1c0;
+    --bodybg: rgb(229, 227, 233);
+    --onlinegreen: rgb(58, 168, 58);
+
+    --darkdarkgrey: rgb(90, 90, 90);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* nice scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 50px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+body {
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bodybg);
+    min-width: 900px;
+    overflow-y: auto;
+}
+
+.universal-page-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    width: fit-content;
+    gap: 30px;
+    margin: 30px;
+    height: fit-content;
+    overflow: hidden;
+    min-width: 900px;
+    max-width: 2000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 60%;
+    margin: 2%;
+}
+
+.right {
+    width: 34%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar {
+    border-radius: 20px;
+    height: 80vh;
+    min-height: 600px;
+    max-height: 800px;
+    background-color: var(--bodybg);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: start;
+    width: 80%;
+}
+
+.sidebar ul li {
+    transition: transform 0.3s;
+    display: block;
+    margin: 15px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar ul li:hover:not(:has(img)){
+    transform: scale(1.1);
+}
+
+.sidebar ul li:active:not(:has(img)){
+    transform: scale(0.9);
+}
+
+
+.sidebar ul li img {
+    margin: 15px;
+    width: 20%;
+}
+
+.sidebar ul li .bottom-settings {
+    color: var(--grey);
+    transition: 0.3s;
+}
+
+.sidebar ul li .bottom-settings:hover {
+    color: var(--darkdarkgrey);
+}
+
+
+
+
+.sidebar ul li .selected {
+    border-radius: 15px;
+    width: 100%;
+    color: var(--orange);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    color: var(--white);
+    display: flex;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--white);
+    max-width: 1500px;
+
+}
+
+
+/* media queries */
+
+
+@media screen and (max-width: 1200px) {
+
+
+    .sidebar {
+        min-height: 0;
+        height: 100px;
+        border-radius: 20px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .sidebar ul li {
+        transition: transform 0.3s;
+        display: block;
+        width: fit-content;
+        max-width: 15%;
+    }
+    
+    .sidebar ul li a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        color: var(--black);
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .universal-page-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .sidebar ul li img {
+        width: 50%;
+    }
+
+    body{
+        margin: 20px;
+    }
+
+}  

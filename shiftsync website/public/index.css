@@ -1,0 +1,248 @@
+:root {
+    --primary-clr: #b38add;
+    --orangeold: #fda10d;
+    --orange: #bf4e00;
+    --orangehighlight: #e68139;
+    --blue: #14213d;
+    --black: rgb(11, 11, 12);
+    --offblack: rgb(24, 24, 26);
+    --white: rgb(252, 252, 254);
+    --offwhite:rgb(203, 201, 209);
+    --darkgrey: grey;
+    --hover_date: rgb(218, 216, 224);
+    --grey: #878895;
+    --light-grey: #b0b1c0;
+    --bodybg: rgb(229, 227, 233);
+    --onlinegreen: rgb(58, 168, 58);
+
+    --darkdarkgrey: rgb(90, 90, 90);
+}
+
+
+.wrapper{
+    border-radius: 20px;
+    width: 100%;
+    background-color: var(--white);
+    height: fit-content;
+
+}
+
+.index-container{
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    max-height: 1000px;
+    min-height: 900px;
+    grid-template-rows: 1fr 3fr;
+    gap: 30px;
+}
+
+.profile-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.profile-wrapper img{
+    max-width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    filter:grayscale(1);
+}
+
+.profile-info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+    margin-right: auto; 
+}
+
+.profile-info h3{
+    font-size: 2rem;
+    font-weight:400;
+
+}
+
+.profile-info button{
+    margin-top: 20px;
+    background-color: var(--white);
+    padding: 5px;
+    border: 2px solid var(--orangehighlight);
+    color: var(--orangehighlight);
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.profile-info p{
+    font-size: 1.5rem;
+    color: var(--darkgrey);
+}
+
+.contact-info{
+    padding: 20px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    margin-left: auto; 
+    
+}
+
+.contact-info p{
+    font-size: 1.5rem;
+    color: var(--darkgrey);
+}
+
+.contact-info button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    border: none;
+    filter: drop-shadow(0 0 5px var(--light-grey)); 
+    padding: 5px;
+    color: var(--grey);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-info button:hover{
+    transform: scale(1.2);
+    background-color: var(--orange);
+    color: var(--white);
+    border: 3px solid var(--orange);
+}
+
+.upcoming-shifts-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    width: 50%;
+    gap: 15px;
+    align-items: center;
+    justify-content: start;
+    margin: 20px;
+    
+}
+
+.upcoming-shifts-wrapper h3{
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.index-shift{
+    flex-shrink: 0;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--white);
+    filter: drop-shadow(0 0 5px var(--light-grey)); 
+    width: 100%;
+    height: 100px;
+    font-size: 1rem;
+}
+
+.upcoming-shifts-wrapper button{
+    background-color: var(--white);
+    border: none;
+    padding: 5px;
+    color: var(--grey);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.upcoming-shifts-wrapper button:hover{
+    transform: scale(1.05);
+    color: var(--orange);
+
+}
+
+.shift-inner-wrapper{
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.index-alert-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    width: 50%;
+    gap: 15px;
+    align-items: center;
+    justify-content: start;
+    margin: 20px;
+    
+}
+
+.alert-inner-wrapper{
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.index-alert-wrapper h3{
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.index-alert{
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--white);
+    filter: drop-shadow(0 0 5px var(--light-grey)); 
+    width: 100%;
+    font-size: 1rem;
+}
+
+.index-alert-wrapper button{
+    background-color: var(--white);
+    border: none;
+    padding: 5px;
+    color: var(--grey);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.index-alert-wrapper button:hover{
+    transform: scale(1.05);
+    color: var(--orange);
+
+}
+
+.overview-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

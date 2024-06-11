@@ -1,0 +1,108 @@
+:root {
+    --primary-clr: #b38add;
+    --orangeold: #fda10d;
+    --orange: #bf4e00;
+    --orangehighlight: #e68139;
+    --blue: #14213d;
+    --black: rgb(11, 11, 12);
+    --offblack: rgb(24, 24, 26);
+    --white: rgb(252, 252, 254);
+    --offwhite:rgb(203, 201, 209);
+    --darkgrey: grey;
+    --hover_date: rgb(218, 216, 224);
+    --grey: #878895;
+    --light-grey: #b0b1c0;
+    --bodybg: rgb(229, 227, 233);
+    --onlinegreen: rgb(58, 168, 58);
+
+    --darkdarkgrey: rgb(90, 90, 90);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body{
+    background-color: var(--bodybg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 50px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 60%;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.container input{
+    height: 60px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    outline: none;
+    padding-left: 10px;
+    background-color: var(--bodybg);
+}
+
+
+.container input:focus{
+    border: 2px solid var(--orange);
+}
+
+.container b{
+    font-weight: 500;
+}
+
+.container button{
+    margin-top: 10px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: 2px solid var(--orange);
+    outline: none;
+    transition: 0.1s;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container button:hover{
+    transform: scale(1.01);
+}
+
+.container button:active{
+    transform: scale(0.99);
+}
+
+.container input::placeholder {
+    color: var(--grey);
+}
+
+.container input:focus::placeholder {
+    color: var(--orange);
+}
+
+img{
+    width: 60%;
+    max-width:600px;
+    min-width: 300px;
+}
