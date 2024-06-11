@@ -14,8 +14,8 @@ app.use(express.static('public'));
 const con = mysql.createConnection({
   host: "localhost",
   user: "root",        // change according to your database info
-  password: "mixalis19101985",    // change according to your database info
-  database: "sys"  // change according to your database info
+  password: " ",    // change according to your database info
+  database: " "  // change according to your database info
 });
 
 
