@@ -9,9 +9,10 @@
 <h2>Description</h2>
 ShiftSync is a fictional company which specializes in making products that helps the workforce of a company manage their shifts. The website is meant to be the service used by managers to control the shifts of their employees.
 The managers have the option to create new shifts on a date and time of their choosing and assign them to a certain employee, they can view when employees are available and assign a shift at a specific time with a press of a button,
-and they have a calendar which allows them to look over the entire schedule of the company. Lastly they receive alerts from employees and can see details employees post after a shift of theirs is done<br>
+and they have a calendar which allows them to look over the entire schedule of the company. Lastly they receive alerts from employees and can see details employees post after a shift of theirs is done.
 
-HOW TO RUN:
+<br>
+<h2>HOW TO RUN:</h2>
 
 The following are needed for website to function:<br>
 Node js<br>
